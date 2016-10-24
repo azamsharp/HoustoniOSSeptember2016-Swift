@@ -2,126 +2,52 @@
 
 import UIKit
 
-var age = 23
-age = 25
-
-var greeting = "Hello World"
-greeting = "Bye World"
-
-var names = ["John","Carla","Jack","Alex","Mason","Jesse"]
-
-names.append("Tom")
-
-names[0] = "Jim"
-
-for name in names {
-   // print(name)
+enum Compas {
+    
+    case North
+    case West
+    case South
+    case East
 }
 
-for index in 1..<9 {
-    print(index)
+var compas :Compas = .West
+
+if compas == .North {
+    print("Begin moving North")
+} else if(compas == .West) {
+    print("Beging moving west")
 }
 
-var airports = ["IAH":"George Bush Airport","LAX":"Los Angelos Airport"]
-
-airports["IAH"] = "Hobby Airport"
-
-airports
-
-for (airportCode,airportName) in airports {
-    
-    print(airportCode)
+switch compas {
+    case .North:
+        print("Move North")
+    case .West:
+        print("Move West")
+    case .East:
+        print("East")
+    case .South:
+        print("South")
 }
 
-func add(a :Int,b:Int) -> Int {
-    return a+b
+func deleteFileFromDisk(fileName :String) throws {
+    
+    // delete the file
 }
 
-func greet() {
-    
-}
+// if exception happens then app crashes
+try! deleteFileFromDisk(fileName: "SecretFile.txt")
 
-func greeting(message :String) -> String {
-    return "Hello World"
-}
+// if exception happens then returns nil
+try? deleteFileFromDisk(fileName: "SecretFile.txt")
 
-let greetingMessage = greeting(message: "Something")
-
-greetingMessage
-
-let number = 10
-
-let pi :Double = 3.142
-
-let isTrue :Bool = true
+//do {
+//    try deleteFileFromDisk(fileName: "MyFile.txt")
+//}
+//catch { // display a message to the user 
+//    
+//}
 
 
-
-
-
-class Dog {
-    
-    var name :String
-    var age :Int?
-    var breed :String?
-    
-    var color :String!
-    
-    init() {
-        
-        self.name = ""
-    }
-    
-    init(name :String) {
-        self.name = name
-    }
-    
-    func eat() {
-        
-    }
-    
-    func drink(nameOfTheDrink :String) {
-        
-    }
-    
-    func run() -> Int {
-        return 100
-    }
-}
-
-func findDogByName(name :String) -> Dog? {
-    ///
-    ///
-    return Dog()
-}
-
-let dog = Dog()
-dog.name = "Foo"
-
-dog.breed = "SomeBreed"
-
-var breed = dog.breed
-print(breed!)
-
-
-
-dog.age = 10
-
-dog.eat()
-
-let runSpeed = dog.run()
-
-dog.drink(nameOfTheDrink: "Juice")
-
-dog.name
-
-let anotherDog = Dog(name: "Foo")
-
-let myAge = 20
-
-let myAgeInString = "My age is \(myAge) and my dog name is \(dog.name)"
-
-myAgeInString
 
 
 

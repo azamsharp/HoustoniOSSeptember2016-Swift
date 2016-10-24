@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		34A80A131DBE5301006B454E /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A80A121DBE5301006B454E /* CameraViewController.swift */; };
+		34A80A151DBE5A8E006B454E /* SwitifyApp-1024.png in Resources */ = {isa = PBXBuildFile; fileRef = 34A80A141DBE5A8E006B454E /* SwitifyApp-1024.png */; };
 		34D57B5F1DB90FA20039A749 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D57B5E1DB90FA20039A749 /* AppDelegate.swift */; };
 		34D57B611DB90FA20039A749 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D57B601DB90FA20039A749 /* ViewController.swift */; };
 		34D57B641DB90FA20039A749 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34D57B621DB90FA20039A749 /* Main.storyboard */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		34A80A121DBE5301006B454E /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		34A80A141DBE5A8E006B454E /* SwitifyApp-1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SwitifyApp-1024.png"; sourceTree = "<group>"; };
 		34D57B5B1DB90FA20039A749 /* HoustoniOSSeptember2016-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HoustoniOSSeptember2016-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		34D57B5E1DB90FA20039A749 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		34D57B601DB90FA20039A749 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -38,6 +42,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		34A80A101DBE516D006B454E /* Week5 */ = {
+			isa = PBXGroup;
+			children = (
+				34A80A111DBE5247006B454E /* Camera */,
+			);
+			name = Week5;
+			sourceTree = "<group>";
+		};
+		34A80A111DBE5247006B454E /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				34A80A121DBE5301006B454E /* CameraViewController.swift */,
+			);
+			name = Camera;
+			sourceTree = "<group>";
+		};
 		34D57B521DB90FA10039A749 = {
 			isa = PBXGroup;
 			children = (
@@ -57,10 +77,12 @@
 		34D57B5D1DB90FA20039A749 /* HoustoniOSSeptember2016-Swift */ = {
 			isa = PBXGroup;
 			children = (
+				34A80A101DBE516D006B454E /* Week5 */,
 				34D57B711DB91B460039A749 /* Week4 */,
 				34D57B5E1DB90FA20039A749 /* AppDelegate.swift */,
 				34D57B601DB90FA20039A749 /* ViewController.swift */,
 				34D57B621DB90FA20039A749 /* Main.storyboard */,
+				34A80A141DBE5A8E006B454E /* SwitifyApp-1024.png */,
 				34D57B651DB90FA20039A749 /* Assets.xcassets */,
 				34D57B671DB90FA20039A749 /* LaunchScreen.storyboard */,
 				34D57B6A1DB90FA20039A749 /* Info.plist */,
@@ -147,6 +169,7 @@
 			files = (
 				34D57B691DB90FA20039A749 /* LaunchScreen.storyboard in Resources */,
 				34D57B661DB90FA20039A749 /* Assets.xcassets in Resources */,
+				34A80A151DBE5A8E006B454E /* SwitifyApp-1024.png in Resources */,
 				34D57B641DB90FA20039A749 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -159,6 +182,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				34D57B611DB90FA20039A749 /* ViewController.swift in Sources */,
+				34A80A131DBE5301006B454E /* CameraViewController.swift in Sources */,
 				34D57B741DB91B790039A749 /* CalculatorViewController.swift in Sources */,
 				34D57B5F1DB90FA20039A749 /* AppDelegate.swift in Sources */,
 			);
@@ -324,6 +348,7 @@
 				34D57B6F1DB90FA20039A749 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

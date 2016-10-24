@@ -1,11 +1,62 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="yYW-L6-oYj">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Camera View Controller-->
+        <scene sceneID="osL-6T-qF0">
+            <objects>
+                <viewController id="yYW-L6-oYj" customClass="CameraViewController" customModule="HoustoniOSSeptember2016_Swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="IcE-0N-ueU"/>
+                        <viewControllerLayoutGuide type="bottom" id="VAV-xa-CyA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fwR-9n-X5a">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SwitifyApp-1024.png" translatesAutoresizingMaskIntoConstraints="NO" id="GUa-dQ-MJl">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="390" id="pcq-4I-Och"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uco-g7-Kkq">
+                                <state key="normal" title="Sepia Filter"/>
+                                <connections>
+                                    <action selector="applySepiaFilter" destination="yYW-L6-oYj" eventType="touchUpInside" id="M9o-WO-xs6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1gT-DQ-k0h">
+                                <state key="normal" title="Open Camera"/>
+                                <connections>
+                                    <action selector="openCameraButtonPressed" destination="yYW-L6-oYj" eventType="touchUpInside" id="EsD-5H-Rih"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="1gT-DQ-k0h" firstAttribute="centerX" secondItem="GUa-dQ-MJl" secondAttribute="centerX" id="0S0-uE-L7L"/>
+                            <constraint firstAttribute="bottom" secondItem="Uco-g7-Kkq" secondAttribute="bottom" constant="20" symbolic="YES" id="DqI-Gb-zsU"/>
+                            <constraint firstItem="Uco-g7-Kkq" firstAttribute="centerX" secondItem="1gT-DQ-k0h" secondAttribute="centerX" id="dQr-rs-28L"/>
+                            <constraint firstItem="1gT-DQ-k0h" firstAttribute="centerX" secondItem="fwR-9n-X5a" secondAttribute="centerX" id="gCH-dw-wsn"/>
+                            <constraint firstItem="GUa-dQ-MJl" firstAttribute="leading" secondItem="fwR-9n-X5a" secondAttribute="leadingMargin" id="mdY-K9-cEe"/>
+                            <constraint firstItem="VAV-xa-CyA" firstAttribute="top" secondItem="1gT-DQ-k0h" secondAttribute="bottom" constant="211" id="ngQ-Mw-e6O"/>
+                            <constraint firstItem="1gT-DQ-k0h" firstAttribute="top" secondItem="GUa-dQ-MJl" secondAttribute="bottom" constant="8" symbolic="YES" id="qFt-x7-RdZ"/>
+                            <constraint firstItem="GUa-dQ-MJl" firstAttribute="top" secondItem="IcE-0N-ueU" secondAttribute="bottom" constant="8" symbolic="YES" id="qLx-gu-4oE"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="photoImageView" destination="GUa-dQ-MJl" id="Lu1-NR-Lzd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AIQ-JD-KWh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-298.39999999999998" y="-93.103448275862078"/>
+        </scene>
         <!--Calculator View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -57,7 +108,10 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="166" y="38"/>
+            <point key="canvasLocation" x="1153" y="-93"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="SwitifyApp-1024.png" width="1024" height="1024"/>
+    </resources>
 </document>
