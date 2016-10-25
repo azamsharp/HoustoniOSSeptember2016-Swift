@@ -1,51 +1,75 @@
 //: Playground - noun: a place where people can play
 
 import UIKit
+import PlaygroundSupport
 
-enum Compas {
+// Core Graphics 
+
+// GraphView.swift
+class GraphView : UIView {
     
-    case North
-    case West
-    case South
-    case East
-}
-
-var compas :Compas = .West
-
-if compas == .North {
-    print("Begin moving North")
-} else if(compas == .West) {
-    print("Beging moving west")
-}
-
-switch compas {
-    case .North:
-        print("Move North")
-    case .West:
-        print("Move West")
-    case .East:
-        print("East")
-    case .South:
-        print("South")
-}
-
-func deleteFileFromDisk(fileName :String) throws {
     
-    // delete the file
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+    }
+    
+    override func draw(_ rect: CGRect) {
+        
+        // circle
+        UIColor.green.setFill()
+        UIColor.blue.setStroke()
+        let circle = UIBezierPath(ovalIn: CGRect(x: 100, y: 100, width: 100, height: 100))
+        circle.lineWidth = 10
+        
+        circle.stroke()
+        circle.fill()
+        circle.close()
+        
+        // line
+        UIColor.red.setStroke()
+        let line = UIBezierPath()
+        line.move(to: CGPoint(x: 0, y: 0))
+        line.addLine(to: CGPoint(x: 100, y: 100))
+        line.addLine(to: CGPoint(x: 200, y: 300))
+        line.lineWidth = 10
+        
+        line.close()
+        line.stroke()
+        
+        // rectangles 
+        UIColor.purple.setFill()
+        let rectangle1 = UIBezierPath(rect: CGRect(x: 10, y: 200, width: 20, height: 200))
+        
+        rectangle1.fill()
+        
+        let rectangle2 = UIBezierPath(rect: CGRect(x: 50, y: 300, width: 20, height: 100))
+        
+        rectangle2.fill()
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
 }
 
-// if exception happens then app crashes
-try! deleteFileFromDisk(fileName: "SecretFile.txt")
+// ViewController.swift
+// self.view
+let container = UIView(frame: CGRect(x: 0, y: 0, width: 320, height: 480))
 
-// if exception happens then returns nil
-try? deleteFileFromDisk(fileName: "SecretFile.txt")
+let graphView = GraphView()
+graphView.frame = CGRect(x: 0, y: 0, width: 320, height: 480)
 
-//do {
-//    try deleteFileFromDisk(fileName: "MyFile.txt")
-//}
-//catch { // display a message to the user 
-//    
-//}
+graphView.backgroundColor = UIColor.yellow
+container.addSubview(graphView)
+
+container.backgroundColor = UIColor.lightGray
+PlaygroundPage.current.liveView = container
+
+
+
+
+
 
 
 
