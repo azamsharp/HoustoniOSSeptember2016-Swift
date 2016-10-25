@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		341FD6071DBFB8E100C41F09 /* CoreMotionTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341FD6061DBFB8E100C41F09 /* CoreMotionTestViewController.swift */; };
 		34A80A131DBE5301006B454E /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A80A121DBE5301006B454E /* CameraViewController.swift */; };
 		34A80A151DBE5A8E006B454E /* SwitifyApp-1024.png in Resources */ = {isa = PBXBuildFile; fileRef = 34A80A141DBE5A8E006B454E /* SwitifyApp-1024.png */; };
 		34A80A181DBEDD9B006B454E /* CoreMotionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A80A171DBEDD9B006B454E /* CoreMotionViewController.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		341FD6061DBFB8E100C41F09 /* CoreMotionTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreMotionTestViewController.swift; sourceTree = "<group>"; };
 		34A80A121DBE5301006B454E /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		34A80A141DBE5A8E006B454E /* SwitifyApp-1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SwitifyApp-1024.png"; sourceTree = "<group>"; };
 		34A80A171DBEDD9B006B454E /* CoreMotionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreMotionViewController.swift; sourceTree = "<group>"; };
@@ -65,6 +67,7 @@
 			isa = PBXGroup;
 			children = (
 				34A80A171DBEDD9B006B454E /* CoreMotionViewController.swift */,
+				341FD6061DBFB8E100C41F09 /* CoreMotionTestViewController.swift */,
 			);
 			name = CoreMotion;
 			sourceTree = "<group>";
@@ -193,6 +196,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				34D57B611DB90FA20039A749 /* ViewController.swift in Sources */,
+				341FD6071DBFB8E100C41F09 /* CoreMotionTestViewController.swift in Sources */,
 				34A80A131DBE5301006B454E /* CameraViewController.swift in Sources */,
 				34D57B741DB91B790039A749 /* CalculatorViewController.swift in Sources */,
 				34A80A181DBEDD9B006B454E /* CoreMotionViewController.swift in Sources */,
