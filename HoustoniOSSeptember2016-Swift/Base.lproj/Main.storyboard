@@ -7,10 +7,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Core Motion Test View Controller-->
+        <!--Pedometer View Controller-->
         <scene sceneID="SyT-no-Roj">
             <objects>
-                <viewController id="jDn-qI-YHF" customClass="CoreMotionTestViewController" customModule="HoustoniOSSeptember2016_Swift" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="jDn-qI-YHF" customClass="PedometerViewController" customModule="HoustoniOSSeptember2016_Swift" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="D9b-yK-QWe"/>
                         <viewControllerLayoutGuide type="bottom" id="l5y-xU-2EU"/>

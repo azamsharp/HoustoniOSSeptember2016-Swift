@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		341FD6071DBFB8E100C41F09 /* CoreMotionTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341FD6061DBFB8E100C41F09 /* CoreMotionTestViewController.swift */; };
+		344F3D8C1DC02F7700234164 /* PedometerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344F3D8B1DC02F7700234164 /* PedometerViewController.swift */; };
 		34A80A131DBE5301006B454E /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A80A121DBE5301006B454E /* CameraViewController.swift */; };
 		34A80A151DBE5A8E006B454E /* SwitifyApp-1024.png in Resources */ = {isa = PBXBuildFile; fileRef = 34A80A141DBE5A8E006B454E /* SwitifyApp-1024.png */; };
 		34A80A181DBEDD9B006B454E /* CoreMotionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A80A171DBEDD9B006B454E /* CoreMotionViewController.swift */; };
@@ -21,6 +22,7 @@
 
 /* Begin PBXFileReference section */
 		341FD6061DBFB8E100C41F09 /* CoreMotionTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreMotionTestViewController.swift; sourceTree = "<group>"; };
+		344F3D8B1DC02F7700234164 /* PedometerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PedometerViewController.swift; sourceTree = "<group>"; };
 		34A80A121DBE5301006B454E /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		34A80A141DBE5A8E006B454E /* SwitifyApp-1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SwitifyApp-1024.png"; sourceTree = "<group>"; };
 		34A80A171DBEDD9B006B454E /* CoreMotionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreMotionViewController.swift; sourceTree = "<group>"; };
@@ -46,9 +48,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		344F3D8A1DC02F6500234164 /* Pedometer */ = {
+			isa = PBXGroup;
+			children = (
+				344F3D8B1DC02F7700234164 /* PedometerViewController.swift */,
+			);
+			name = Pedometer;
+			sourceTree = "<group>";
+		};
 		34A80A101DBE516D006B454E /* Week5 */ = {
 			isa = PBXGroup;
 			children = (
+				344F3D8A1DC02F6500234164 /* Pedometer */,
 				34A80A161DBEDD8A006B454E /* CoreMotion */,
 				34A80A111DBE5247006B454E /* Camera */,
 			);
@@ -198,6 +209,7 @@
 				34D57B611DB90FA20039A749 /* ViewController.swift in Sources */,
 				341FD6071DBFB8E100C41F09 /* CoreMotionTestViewController.swift in Sources */,
 				34A80A131DBE5301006B454E /* CameraViewController.swift in Sources */,
+				344F3D8C1DC02F7700234164 /* PedometerViewController.swift in Sources */,
 				34D57B741DB91B790039A749 /* CalculatorViewController.swift in Sources */,
 				34A80A181DBEDD9B006B454E /* CoreMotionViewController.swift in Sources */,
 				34D57B5F1DB90FA20039A749 /* AppDelegate.swift in Sources */,
