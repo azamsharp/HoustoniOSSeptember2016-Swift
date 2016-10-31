@@ -27,15 +27,14 @@ class ActivityIndicatorViewController: UIViewController {
             self.activityIndicator.startAnimating()
         }
         
-        DispatchQueue.main.asyncAfter(deadline: .now() + 5.0) {
+        DispatchQueue.global().asyncAfter(deadline: .now() + 5.0) { // do the expensive operation in the background thread instead of the UI Thread
             
             // after I have fetched the data successfully
             print("I HAVE FETCHED DATA!!!")
             
             DispatchQueue.main.async {
-                  self.activityIndicator.isHidden = true
+                self.activityIndicator.isHidden = true
             }
-            
         }
         
     }
