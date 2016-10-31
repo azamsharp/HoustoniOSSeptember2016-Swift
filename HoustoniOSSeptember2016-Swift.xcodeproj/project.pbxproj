@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		341FD6071DBFB8E100C41F09 /* CoreMotionTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341FD6061DBFB8E100C41F09 /* CoreMotionTestViewController.swift */; };
 		344F3D8C1DC02F7700234164 /* PedometerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344F3D8B1DC02F7700234164 /* PedometerViewController.swift */; };
+		346F6AFE1DC78192009F0B23 /* ActivityIndicatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346F6AFD1DC78192009F0B23 /* ActivityIndicatorViewController.swift */; };
 		34A80A131DBE5301006B454E /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A80A121DBE5301006B454E /* CameraViewController.swift */; };
 		34A80A151DBE5A8E006B454E /* SwitifyApp-1024.png in Resources */ = {isa = PBXBuildFile; fileRef = 34A80A141DBE5A8E006B454E /* SwitifyApp-1024.png */; };
 		34A80A181DBEDD9B006B454E /* CoreMotionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A80A171DBEDD9B006B454E /* CoreMotionViewController.swift */; };
@@ -18,11 +19,13 @@
 		34D57B661DB90FA20039A749 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34D57B651DB90FA20039A749 /* Assets.xcassets */; };
 		34D57B691DB90FA20039A749 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34D57B671DB90FA20039A749 /* LaunchScreen.storyboard */; };
 		34D57B741DB91B790039A749 /* CalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D57B731DB91B790039A749 /* CalculatorViewController.swift */; };
+		34DDF0D81DC797FF002BECF2 /* PostsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DDF0D71DC797FF002BECF2 /* PostsTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		341FD6061DBFB8E100C41F09 /* CoreMotionTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreMotionTestViewController.swift; sourceTree = "<group>"; };
 		344F3D8B1DC02F7700234164 /* PedometerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PedometerViewController.swift; sourceTree = "<group>"; };
+		346F6AFD1DC78192009F0B23 /* ActivityIndicatorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorViewController.swift; sourceTree = "<group>"; };
 		34A80A121DBE5301006B454E /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		34A80A141DBE5A8E006B454E /* SwitifyApp-1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SwitifyApp-1024.png"; sourceTree = "<group>"; };
 		34A80A171DBEDD9B006B454E /* CoreMotionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreMotionViewController.swift; sourceTree = "<group>"; };
@@ -35,6 +38,7 @@
 		34D57B6A1DB90FA20039A749 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		34D57B701DB910850039A749 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
 		34D57B731DB91B790039A749 /* CalculatorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatorViewController.swift; sourceTree = "<group>"; };
+		34DDF0D71DC797FF002BECF2 /* PostsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostsTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,23 @@
 				344F3D8B1DC02F7700234164 /* PedometerViewController.swift */,
 			);
 			name = Pedometer;
+			sourceTree = "<group>";
+		};
+		346F6AD51DC6CE5E009F0B23 /* Week 6 */ = {
+			isa = PBXGroup;
+			children = (
+				346F6AFC1DC7816D009F0B23 /* Multithreading */,
+			);
+			name = "Week 6";
+			sourceTree = "<group>";
+		};
+		346F6AFC1DC7816D009F0B23 /* Multithreading */ = {
+			isa = PBXGroup;
+			children = (
+				346F6AFD1DC78192009F0B23 /* ActivityIndicatorViewController.swift */,
+				34DDF0D71DC797FF002BECF2 /* PostsTableViewController.swift */,
+			);
+			name = Multithreading;
 			sourceTree = "<group>";
 		};
 		34A80A101DBE516D006B454E /* Week5 */ = {
@@ -102,6 +123,7 @@
 		34D57B5D1DB90FA20039A749 /* HoustoniOSSeptember2016-Swift */ = {
 			isa = PBXGroup;
 			children = (
+				346F6AD51DC6CE5E009F0B23 /* Week 6 */,
 				34A80A101DBE516D006B454E /* Week5 */,
 				34D57B711DB91B460039A749 /* Week4 */,
 				34D57B5E1DB90FA20039A749 /* AppDelegate.swift */,
@@ -207,8 +229,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				34D57B611DB90FA20039A749 /* ViewController.swift in Sources */,
+				346F6AFE1DC78192009F0B23 /* ActivityIndicatorViewController.swift in Sources */,
 				341FD6071DBFB8E100C41F09 /* CoreMotionTestViewController.swift in Sources */,
 				34A80A131DBE5301006B454E /* CameraViewController.swift in Sources */,
+				34DDF0D81DC797FF002BECF2 /* PostsTableViewController.swift in Sources */,
 				344F3D8C1DC02F7700234164 /* PedometerViewController.swift in Sources */,
 				34D57B741DB91B790039A749 /* CalculatorViewController.swift in Sources */,
 				34A80A181DBEDD9B006B454E /* CoreMotionViewController.swift in Sources */,

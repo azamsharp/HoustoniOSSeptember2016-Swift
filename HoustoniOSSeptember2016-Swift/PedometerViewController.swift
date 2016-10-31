@@ -16,31 +16,19 @@ class PedometerViewController : UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+    
         self.pedometer = CMPedometer()
         
         let calendar = Calendar.current
+        let twoDaysAgo = calendar.date(byAdding: .day, value: -2, to: Date())
         
-        for day in 1...7 {
-           
-            // create a date which is one day in the past
-            let daysInPast = calendar.date(byAdding: Calendar.Component.day, value: -day, to: Date())
+        self.pedometer.queryPedometerData(from: twoDaysAgo!, to: Date()) { (data :CMPedometerData?, error :Error?) in
             
-            print(daysInPast!)
+            print(data?.numberOfSteps)
             
-            self.pedometer.queryPedometerData(from: daysInPast!, to: Date()) { (data :CMPedometerData?, error :Error?) in
-    
-                //data?.distance
-                //data?.floorsAscended
-                //data?.floorsDescended
-                
-                print(data?.numberOfSteps)
-                
-            }
+            print("Getting historical data")
             
         }
-        
-       
         
     }
     
