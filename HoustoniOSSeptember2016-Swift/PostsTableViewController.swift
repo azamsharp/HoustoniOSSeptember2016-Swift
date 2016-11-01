@@ -22,7 +22,7 @@ class PostsTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+       
         self.posts = [Post]()
         
         let postsURL = "https://jsonplaceholder.typicode.com/photos"
@@ -49,7 +49,7 @@ class PostsTableViewController: UITableViewController {
                 self.tableView.reloadData()
             }
             
-            let dictionary = result[0]
+         //   let dictionary = result[0]
             
 //            let userDictionary = dictionary["user"]
 //            let profileImageURL = userDictionary["profile_image_url"]
@@ -91,10 +91,14 @@ class PostsTableViewController: UITableViewController {
         
         cell.textLabel?.text = post.title
         
-        
-        let imageData = try! Data(contentsOf: URL(string: post.imageURL)!)
-        
-        cell.imageView?.image = UIImage(data: imageData)
+        DispatchQueue.global().async {
+            
+            let imageData = try! Data(contentsOf: URL(string: post.imageURL)!)
+            
+            DispatchQueue.main.async {
+                cell.imageView?.image = UIImage(data: imageData)
+            }
+        }
         
         // Configure the cell...
 

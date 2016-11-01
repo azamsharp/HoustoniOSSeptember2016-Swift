@@ -13,6 +13,9 @@
 		34A80A131DBE5301006B454E /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A80A121DBE5301006B454E /* CameraViewController.swift */; };
 		34A80A151DBE5A8E006B454E /* SwitifyApp-1024.png in Resources */ = {isa = PBXBuildFile; fileRef = 34A80A141DBE5A8E006B454E /* SwitifyApp-1024.png */; };
 		34A80A181DBEDD9B006B454E /* CoreMotionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A80A171DBEDD9B006B454E /* CoreMotionViewController.swift */; };
+		34AADFB61DC8E94F0037C711 /* MapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AADFB51DC8E94F0037C711 /* MapsViewController.swift */; };
+		34AADFB81DC8F37D0037C711 /* Pokemon-Image.png in Resources */ = {isa = PBXBuildFile; fileRef = 34AADFB71DC8F37D0037C711 /* Pokemon-Image.png */; };
+		34AADFBA1DC8F7960037C711 /* PokemonAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AADFB91DC8F7960037C711 /* PokemonAnnotationView.swift */; };
 		34D57B5F1DB90FA20039A749 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D57B5E1DB90FA20039A749 /* AppDelegate.swift */; };
 		34D57B611DB90FA20039A749 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D57B601DB90FA20039A749 /* ViewController.swift */; };
 		34D57B641DB90FA20039A749 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34D57B621DB90FA20039A749 /* Main.storyboard */; };
@@ -29,6 +32,9 @@
 		34A80A121DBE5301006B454E /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		34A80A141DBE5A8E006B454E /* SwitifyApp-1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SwitifyApp-1024.png"; sourceTree = "<group>"; };
 		34A80A171DBEDD9B006B454E /* CoreMotionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreMotionViewController.swift; sourceTree = "<group>"; };
+		34AADFB51DC8E94F0037C711 /* MapsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapsViewController.swift; sourceTree = "<group>"; };
+		34AADFB71DC8F37D0037C711 /* Pokemon-Image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Pokemon-Image.png"; sourceTree = "<group>"; };
+		34AADFB91DC8F7960037C711 /* PokemonAnnotationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokemonAnnotationView.swift; sourceTree = "<group>"; };
 		34D57B5B1DB90FA20039A749 /* HoustoniOSSeptember2016-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HoustoniOSSeptember2016-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		34D57B5E1DB90FA20039A749 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		34D57B601DB90FA20039A749 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +69,7 @@
 		346F6AD51DC6CE5E009F0B23 /* Week 6 */ = {
 			isa = PBXGroup;
 			children = (
+				34AADFB41DC8E93A0037C711 /* Maps */,
 				346F6AFC1DC7816D009F0B23 /* Multithreading */,
 			);
 			name = "Week 6";
@@ -102,6 +109,16 @@
 				341FD6061DBFB8E100C41F09 /* CoreMotionTestViewController.swift */,
 			);
 			name = CoreMotion;
+			sourceTree = "<group>";
+		};
+		34AADFB41DC8E93A0037C711 /* Maps */ = {
+			isa = PBXGroup;
+			children = (
+				34AADFB51DC8E94F0037C711 /* MapsViewController.swift */,
+				34AADFB71DC8F37D0037C711 /* Pokemon-Image.png */,
+				34AADFB91DC8F7960037C711 /* PokemonAnnotationView.swift */,
+			);
+			name = Maps;
 			sourceTree = "<group>";
 		};
 		34D57B521DB90FA10039A749 = {
@@ -214,6 +231,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34AADFB81DC8F37D0037C711 /* Pokemon-Image.png in Resources */,
 				34D57B691DB90FA20039A749 /* LaunchScreen.storyboard in Resources */,
 				34D57B661DB90FA20039A749 /* Assets.xcassets in Resources */,
 				34A80A151DBE5A8E006B454E /* SwitifyApp-1024.png in Resources */,
@@ -229,10 +247,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				34D57B611DB90FA20039A749 /* ViewController.swift in Sources */,
+				34AADFBA1DC8F7960037C711 /* PokemonAnnotationView.swift in Sources */,
 				346F6AFE1DC78192009F0B23 /* ActivityIndicatorViewController.swift in Sources */,
 				341FD6071DBFB8E100C41F09 /* CoreMotionTestViewController.swift in Sources */,
 				34A80A131DBE5301006B454E /* CameraViewController.swift in Sources */,
 				34DDF0D81DC797FF002BECF2 /* PostsTableViewController.swift in Sources */,
+				34AADFB61DC8E94F0037C711 /* MapsViewController.swift in Sources */,
 				344F3D8C1DC02F7700234164 /* PedometerViewController.swift in Sources */,
 				34D57B741DB91B790039A749 /* CalculatorViewController.swift in Sources */,
 				34A80A181DBEDD9B006B454E /* CoreMotionViewController.swift in Sources */,
