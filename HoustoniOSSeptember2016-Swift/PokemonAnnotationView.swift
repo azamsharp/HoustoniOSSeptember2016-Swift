@@ -15,12 +15,25 @@ class PokemonAnnotationView: MKAnnotationView {
         
         super.init(annotation: annotation, reuseIdentifier: reuseIdentifier)
         
-        let image = UIImage(named: "Pokemon-Image")
-        let imgView = UIImageView(image: image)
+        let pokemonAnnotation = annotation as! PokemonAnnotation
         
-        imgView.frame = CGRect(x: 0, y: 0, width: 50, height: 50)
+        DispatchQueue.global().async {
+            
+            let imageData = try! Data(contentsOf: URL(string: pokemonAnnotation.imageURL)!)
+            let image = UIImage(data: imageData)
+            let imgView = UIImageView(image: image)
+            imgView.frame = CGRect(x: 0, y: 0, width: 50, height: 50)
+            
+            DispatchQueue.main.async {
+                self.addSubview(imgView)
+            }
+            
+        }
         
-        self.addSubview(imgView)
+      //  let image = UIImage(named: "Pokemon-Image")
+      //  let imgView = UIImageView(image: image)
+        
+        //self.addSubview(imgView)
     }
     
     required init?(coder aDecoder: NSCoder) {
